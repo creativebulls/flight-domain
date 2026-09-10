@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passenger Details | SkyJet Airlines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="booking">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <circle cx="18" cy="18" r="18" fill="#c9a227"/>
+          <path d="M6 21c8-2 12-8 24-10l-6 6c-5 1-9 5-12 10l-6-6z" fill="#0b1f3a"/>
+        </svg>
+        SkyJet Airlines
+      </a>
+      <nav class="nav">
+        <a href="index.html">Book</a>
+        <a href="flights.html">Flights</a>
+        <a class="active" href="booking.html">Checkout</a>
+      </nav>
+      <a class="header-cta" href="flights.html">Back to flights</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Checkout</p>
+      <h1>Passenger details</h1>
+      <p>Enter traveller information to generate a sample booking reference.</p>
+    </div>
+  </section>
+
+  <div class="container booking-grid">
+    <form class="form-card panel" id="bookingForm">
+      <h2 class="card-title">Lead passenger</h2>
+      <div class="form-row">
+        <div class="field">
+          <label for="firstName">First name</label>
+          <input id="firstName" required placeholder="Aarav">
+        </div>
+        <div class="field">
+          <label for="lastName">Last name</label>
+          <input id="lastName" required placeholder="Mehta">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" required placeholder="you@email.com">
+        </div>
+        <div class="field">
+          <label for="phone">Mobile</label>
+          <input id="phone" type="tel" required placeholder="9876543210">
+        </div>
+      </div>
+      <div class="form-row full">
+        <label class="agree">
+          <input type="checkbox" required>
+          I agree this is a demo booking and no real ticket will be issued.
+        </label>
+      </div>
+      <button class="primary-btn" type="submit">Confirm booking</button>
+    </form>
+    <aside class="summary-card" id="bookingSummary"></aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>SkyJet Airlines</strong>
+        <p>Sample HTML flight booking website for demo use.</p>
+      </div>
+      <p>© 2026 SkyJet Airlines. Not a real carrier.</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

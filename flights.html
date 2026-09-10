@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Flights | SkyJet Airlines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="flights">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <circle cx="18" cy="18" r="18" fill="#c9a227"/>
+          <path d="M6 21c8-2 12-8 24-10l-6 6c-5 1-9 5-12 10l-6-6z" fill="#0b1f3a"/>
+        </svg>
+        SkyJet Airlines
+      </a>
+      <nav class="nav">
+        <a href="index.html">Book</a>
+        <a class="active" href="flights.html">Flights</a>
+        <a href="index.html#perks">Travel info</a>
+      </nav>
+      <a class="header-cta" href="index.html">New search</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Select your flight</p>
+      <h1>Available flights</h1>
+      <p id="searchSummary">Loading your search…</p>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <aside class="panel">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <strong>Stops</strong>
+        <label><input type="radio" name="stops" value="all" checked> All flights</label>
+        <label><input type="radio" name="stops" value="nonstop"> Non-stop only</label>
+      </div>
+      <div class="filter-group">
+        <label for="cabinFilter"><strong>Cabin</strong></label>
+        <select id="cabinFilter">
+          <option value="all">All cabins</option>
+          <option value="Economy">Economy</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+    </aside>
+    <section class="flights-list" id="flightsList"></section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>SkyJet Airlines</strong>
+        <p>Sample HTML flight booking website for demo use.</p>
+      </div>
+      <p>© 2026 SkyJet Airlines. Not a real carrier.</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

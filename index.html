@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyJet Airlines | Book Flights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <circle cx="18" cy="18" r="18" fill="#c9a227"/>
+          <path d="M6 21c8-2 12-8 24-10l-6 6c-5 1-9 5-12 10l-6-6z" fill="#0b1f3a"/>
+        </svg>
+        SkyJet Airlines
+      </a>
+      <nav class="nav">
+        <a class="active" href="index.html">Book</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#perks">Travel info</a>
+        <a href="flights.html">Manage trip</a>
+      </nav>
+      <a class="header-cta" href="#search">Search flights</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-copy">
+      <p class="eyebrow">Sample airline booking site</p>
+      <h1>Fly farther, arrive sooner.</h1>
+      <p>Search everyday domestic and international routes, compare fares, and complete a simple passenger booking in a few clicks.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <form class="search-card" id="searchForm">
+      <div class="trip-toggle">
+        <button type="button" class="chip active" data-trip="round">Round trip</button>
+        <button type="button" class="chip" data-trip="oneway">One way</button>
+      </div>
+      <div class="search-grid">
+        <div class="field">
+          <label for="fromAirport">From</label>
+          <select id="fromAirport" data-airports required></select>
+        </div>
+        <div class="field">
+          <label for="toAirport">To</label>
+          <select id="toAirport" data-airports required></select>
+        </div>
+        <div class="field">
+          <label for="departDate">Depart</label>
+          <input id="departDate" type="date" required>
+        </div>
+        <div class="field" id="returnField">
+          <label for="returnDate">Return</label>
+          <input id="returnDate" type="date">
+        </div>
+        <div class="field">
+          <label for="passengers">Passengers</label>
+          <select id="passengers">
+            <option value="1">1 Adult</option>
+            <option value="2">2 Adults</option>
+            <option value="3">3 Adults</option>
+            <option value="4">4 Adults</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cabin">Cabin</label>
+          <select id="cabin">
+            <option>Economy</option>
+            <option>Business</option>
+          </select>
+        </div>
+        <button class="search-btn" type="submit">Search</button>
+      </div>
+      <p class="notice" id="searchNotice"></p>
+    </form>
+  </div>
+
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Popular routes</p>
+          <h2 class="section-title">Where will you go next?</h2>
+        </div>
+      </div>
+      <div class="destinations">
+        <article class="destination-card d1" data-route="DEL-BOM">
+          <h3>Mumbai</h3>
+          <span>From Delhi · 2h 10m</span>
+        </article>
+        <article class="destination-card d2" data-route="BOM-DXB">
+          <h3>Dubai</h3>
+          <span>From Mumbai · Evening flights</span>
+        </article>
+        <article class="destination-card d3" data-route="BLR-SIN">
+          <h3>Singapore</h3>
+          <span>From Bengaluru · Overnight</span>
+        </article>
+        <article class="destination-card d4" data-route="DEL-LHR">
+          <h3>London</h3>
+          <span>From Delhi · Non-stop</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="perks">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Why SkyJet</p>
+          <h2 class="section-title">A normal booking flow, kept simple.</h2>
+        </div>
+      </div>
+      <div class="perks">
+        <article class="perk">
+          <p class="eyebrow">01</p>
+          <h3>Search by city</h3>
+          <p>Pick origin, destination, dates, passengers, and cabin the way a regular airline site works.</p>
+        </article>
+        <article class="perk">
+          <p class="eyebrow">02</p>
+          <h3>Compare fares</h3>
+          <p>See departure time, duration, stops, and price before you choose a flight.</p>
+        </article>
+        <article class="perk">
+          <p class="eyebrow">03</p>
+          <h3>Confirm a PNR</h3>
+          <p>Enter passenger details and get a sample booking reference. No payment is processed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>SkyJet Airlines</strong>
+        <p>Sample HTML flight booking website for demo use.</p>
+      </div>
+      <p>© 2026 SkyJet Airlines. Not a real carrier.</p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
